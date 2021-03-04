@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Final_iOS1Course" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwp-jP-mGk">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Cell" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnb-pe-iar">
+                                <rect key="frame" x="29" y="90" width="70" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addItem:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aqk-qo-FlL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-qq-eVi">
+                                <rect key="frame" x="29" y="18" width="70" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="JR9-5Z-tZu"/>
+                                    <constraint firstAttribute="width" constant="70" id="cbE-BX-dfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jnb-pe-iar" firstAttribute="top" secondItem="CXv-qq-eVi" secondAttribute="bottom" constant="8" symbolic="YES" id="2cd-pc-hON"/>
+                            <constraint firstItem="CXv-qq-eVi" firstAttribute="leading" secondItem="mwp-jP-mGk" secondAttribute="leading" constant="29" id="CJM-MH-K3r"/>
+                            <constraint firstAttribute="trailing" secondItem="jnb-pe-iar" secondAttribute="trailing" constant="29" id="KHi-53-CDF"/>
+                            <constraint firstItem="jnb-pe-iar" firstAttribute="leading" secondItem="mwp-jP-mGk" secondAttribute="leading" constant="29" id="aMz-cI-L6N"/>
+                            <constraint firstAttribute="bottom" secondItem="jnb-pe-iar" secondAttribute="bottom" constant="8" id="k4o-0G-9rL"/>
+                            <constraint firstAttribute="trailing" secondItem="CXv-qq-eVi" secondAttribute="trailing" constant="29" id="kjk-Dq-0qu"/>
+                            <constraint firstItem="CXv-qq-eVi" firstAttribute="top" secondItem="mwp-jP-mGk" secondAttribute="top" constant="18" id="sVC-on-Ldi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mwp-jP-mGk" secondAttribute="bottom" id="8rW-V6-cM6"/>
+                <constraint firstAttribute="trailing" secondItem="mwp-jP-mGk" secondAttribute="trailing" id="GSq-PW-mDL"/>
+                <constraint firstAttribute="bottom" secondItem="mwp-jP-mGk" secondAttribute="bottom" id="Y5f-3m-pv8"/>
+                <constraint firstItem="mwp-jP-mGk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b6Z-dI-WNq"/>
+                <constraint firstItem="mwp-jP-mGk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h9a-EO-XDM"/>
+                <constraint firstItem="mwp-jP-mGk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uc4-hp-rCe"/>
+                <constraint firstAttribute="trailing" secondItem="mwp-jP-mGk" secondAttribute="trailing" id="xsV-fL-Mfu"/>
+                <constraint firstItem="mwp-jP-mGk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="y3X-ih-Jvv"/>
+            </constraints>
+            <size key="customSize" width="128" height="128"/>
+            <connections>
+                <outlet property="titleLabel" destination="CXv-qq-eVi" id="x4u-oY-aVh"/>
+            </connections>
+            <point key="canvasLocation" x="-143.47826086956522" y="46.205357142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
